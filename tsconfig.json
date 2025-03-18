@@ -1,0 +1,11 @@
+{
+	"include": ["src/*"],
+	
+	"compilerOptions": {
+		"allowJs": true,
+		"declaration": true,
+		"emitDeclarationOnly": true,
+		"outFile": "drawingLib.d.ts",
+		"declarationMap": true,
+	}
+}
