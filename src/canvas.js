@@ -1,5 +1,8 @@
 /** @type {HTMLCanvasElement} */
-export const canvasEl = document.querySelector("canvas#target");
+export const canvasEl = document.querySelector("canvas#drawing-lib");
+if (canvasEl == null) {
+	alert('I couldn\'t find a canvas with id="drawing-lib".');
+}
 export const ctx = canvasEl.getContext("2d");
 
 export let virtualWidth = 480;
