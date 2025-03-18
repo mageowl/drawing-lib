@@ -99,6 +99,7 @@ declare module "drawing" {
 		x: number,
 		y: number,
 		color: string | null,
+		align: any,
 		font?: string | null,
 	): void;
 	/**
@@ -147,33 +148,18 @@ declare module "input" {
 	 */
 	export function isKeyDown(key: string): any;
 }
-declare module "index" {
-	import { drawRectangle } from "drawing";
-	import { drawPolygon } from "drawing";
-	import { drawCircle } from "drawing";
-	import { drawText } from "drawing";
-	import { clearScreen } from "drawing";
-	import { setCanvasSize } from "canvas";
-	import { loadImage } from "image";
-	import { isKeyDown } from "input";
-	import { pt } from "math";
-	import { loop } from "loop";
-	import { deltaTime } from "loop";
-	declare global {
-		namespace drawing {
-			export { drawRectangle };
-			export { drawPolygon };
-			export { drawCircle };
-			export { drawText };
-			export { clearScreen };
-			export { setCanvasSize };
-			export { loadImage };
-			export { isKeyDown };
-			export { pt };
-			export { loop };
-			export { deltaTime };
-		}
-	}
+global {
+	export { drawRectangle } from "drawing";
+	export { drawPolygon } from "drawing";
+	export { drawCircle } from "drawing";
+	export { drawText } from "drawing";
+	export { clearScreen } from "drawing";
+	export { setCanvasSize } from "canvas";
+	export { loadImage } from "image";
+	export { isKeyDown } from "input";
+	export { pt } from "math";
+	export { loop } from "loop";
+	export { deltaTime } from "loop";
 }
 //# sourceMappingURL=drawingLib.d.ts.map
 

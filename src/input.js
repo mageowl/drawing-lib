@@ -10,8 +10,8 @@ export function isKeyDown(key) {
 }
 
 addEventListener("keydown", ({ key }) => {
-	keysDown[key] = true;
+	keysDown[key.toLowerCase()] = true;
 });
 addEventListener("keyup", ({ key }) => {
-	keysDown[key] = false;
+	keysDown[key.toLowerCase()] = false;
 });

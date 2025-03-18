@@ -57,9 +57,10 @@ export function drawCircle(x, y, r, color) {
  * @param {string?} color
  * @param {string?} font Font style (e.g. bold italic 40px serif)
  */
-export function drawText(text, x, y, color, font = "16px monospace") {
+export function drawText(text, x, y, color, align, font = "16px monospace") {
 	ctx.fillStyle = color;
 	ctx.font = font;
+	ctx.textAlign = align;
 	ctx.fillText(text, scale(x), scale(y));
 }
 
