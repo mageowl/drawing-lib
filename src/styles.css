@@ -7,7 +7,7 @@ body {
 	margin: 0;
 }
 
-canvas#target {
+canvas#drawing-lib {
 	background: white;
 	display: none;
 }
